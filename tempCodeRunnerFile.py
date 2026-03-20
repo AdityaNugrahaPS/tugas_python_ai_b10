@@ -1,0 +1,2 @@
+
+print(mahasiswa.key())
