@@ -1,0 +1,27 @@
+===== LUAR CLASS =====
+Rata-rata nilai ujian: 80.0
+Standar deviasi nilai ujian: 8.282511696339462
+Nilai ujian tertinggi: 92
+Nilai ujian terendah: 66
+Data mahasiswa:
+    nama         nim  nilai       status
+0   Adit  2307110467     78        LULUS
+1   Budi  2307110468     85        LULUS
+2  Citra  2307110469     90        LULUS
+3   Dina  2307110470     66  TIDAK LULUS
+4    Eko  2307110471     74        LULUS
+Jumlah kolom: 4
+Jumlah baris: 5
+Jumlah LULUS: 4
+Jumlah TIDAK LULUS: 1
+
+===== DALAM CLASS =====
+Rata-rata nilai ujian: 78.6
+Pass rate: 80.0
+Data mahasiswa:
+    nama         nim  nilai       status
+0   Adit  2307110467     78        LULUS
+1   Budi  2307110468     85        LULUS
+2  Citra  2307110469     90        LULUS
+3   Dina  2307110470     66  TIDAK LULUS
+4    Eko  2307110471     74        LULUS

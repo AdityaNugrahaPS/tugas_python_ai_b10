@@ -15,7 +15,7 @@ def tambah(a: float, b: float = 0.0) -> float:
 def rata_rata(angka: list[float]) -> float:
     """Menghitung rata-rata list angka, return 0 jika kosong"""
     if len(angka) == 0:
-        return 0
+        return 0.0
     return round(sum(angka) / len(angka), 2)
 
 
@@ -24,11 +24,15 @@ def rata_rata(angka: list[float]) -> float:
 # =========================
 
 class Student:
-    def __init__(self, nama: str, nim: str, nilai: list[float] | None = None):
+    def __init__(self, nama: str, nim: str, nilai: list[float]):
         """Inisialisasi data mahasiswa"""
         self.nama = nama
         self.nim = nim
-        self.nilai = nilai if nilai is not None else []
+        
+        if nilai is None:
+            self.nilai = []
+        else:
+            self.nilai = nilai
 
     def tambah_nilai(self, skor: float):
         """Menambahkan satu nilai ke list"""
@@ -40,7 +44,10 @@ class Student:
 
     def status(self, threshold: float = 70.0) -> str:
         """Menentukan status kelulusan berdasarkan threshold"""
-        return 'LULUS' if self.rata_nilai() >= threshold else 'TIDAK LULUS'
+        if self.rata_nilai() >= threshold:
+            return 'LULUS'
+        else:
+            return 'TIDAK LULUS'
 
     def __str__(self):
         """Representasi string object"""

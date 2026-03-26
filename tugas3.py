@@ -195,8 +195,8 @@ print("="*50)
 list_1 = ['apel', 'pisang', 'mangga', 'nanas', 'melon']
 list_2 = ['jeruk', 'kelengkeng', 'semangka', 'anggur', 'pepaya']
 
-list_1.append(list_2)
-print(f"Append (nested): {list_1}")
+list_1.extend(list_2)
+print(f"Extend (gabung list): {list_1}")
 
 list_1.remove('apel')
 print(f"Remove 'apel': {list_1}")
